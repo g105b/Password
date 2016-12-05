@@ -3,7 +3,6 @@ pwd["output"].addEventListener("click", copy);
 
 function generate(e) {
 	e.preventDefault();
-	document.body.focus();
 
 	var options = {
 		counter: 1,
@@ -25,6 +24,8 @@ function generate(e) {
 		.then(function(output) {
 			pwd["output"].innerHTML = output;
 		});
+
+		copy.call(pwd["output"], e);
 	});
 }
 
