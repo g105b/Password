@@ -1,0 +1,31 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Password</title>
+<link rel="stylesheet" href="style.css" />
+
+<form id="pwd" method="post">
+	<label>
+		<span>Master password</span>
+		<input type="password" name="master" required />
+	</label>
+
+	<label>
+		<span>Service name</span>
+		<input name="service" required />
+	</label>
+
+	<label>
+		<span>Username</span>
+		<input name="username" required />
+	</label>
+
+	<button name="generate">
+		Generate
+	</button>
+
+	<textarea id="output" readonly>0123456789abcdef</textarea>
+</form>
+
+<script src="lesspass.js"></script>
+<script src="script.js"></script>

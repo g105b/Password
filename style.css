@@ -1,0 +1,65 @@
+html {
+	font-size: 16px;
+}
+body {
+	transition: background 0.2s ease-in-out;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 1rem;
+}
+form {
+	margin: 0 1rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+label {
+	display: block;
+	margin-bottom: 3rem;
+}
+label>span {
+	display: block;
+}
+input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	text-align: center;
+}
+button {
+	background: transparent;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	margin-bottom: 3rem;
+}
+.coppied {
+	background: #9BE68A;
+}
+[readonly] {
+	position: relative;
+	display: block;
+	font-size: 2rem;
+	color: #aaa;
+	border: none;
+	width: 3em;
+	height: 8em;
+	margin-left: auto;
+	margin-right: auto;
+	resize: none;
+	text-align: center;
+	outline: none;
+}
+
+@media(min-width: 800px) {
+	html {
+		font-size: 24px;
+	}
+	form {
+		max-width: 18rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
