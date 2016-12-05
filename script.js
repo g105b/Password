@@ -17,7 +17,7 @@ function generate(e) {
 	.then(function(response) {
 		LessPass.renderPassword(
 			response,
-			pwd["service"].toLowerCase().replace(/\s/g, ''),
+			pwd["service"].value.toLowerCase().replace(/\s/g, ''),
 			options
 		)
 		.then(function(output) {
