@@ -3,6 +3,8 @@ pwd["output"].addEventListener("click", copy);
 
 function generate(e) {
 	e.preventDefault();
+	document.body.focus();
+
 	var options = {
 		counter: 1,
 		length: 16,
